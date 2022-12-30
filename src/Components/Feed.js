@@ -1,6 +1,7 @@
 import React from "react";
 import DataCard from "./DataCard";
 import MyChart from "./MyChart";
+import StatisticsCards from "./StatisticsCards";
 
 function Feed() {
   const data = {
@@ -32,33 +33,27 @@ function Feed() {
         "4:00",
       ],
       data: [
-        2.23,
-        2.215,
-        2.22,
-        2.25,
-        2.245,
-        2.27,
-        2.28,
-        2.29,
-        2.3,
-        2.29,
-        2.325,
-        2.325,
-        2.32,
+        2.23, 2.215, 2.22, 2.25, 2.245, 2.27, 2.28, 2.29, 2.3, 2.29, 2.325,
+        2.325, 2.32,
       ],
     },
   };
 
   return (
-    <div className="bg-red-400 p-4 w-screen space-y-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+    <div className="bg-[#263159] p-2 w-screen space-y-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 ">
+        <DataCard />
+        <DataCard />
         <DataCard />
         <DataCard />
         <DataCard />
       </div>
       <div className="p-4">
-          <MyChart info={data}/>
-        </div>
+        <MyChart info={data} />
+      </div>
+      <div className="p-4">
+        <StatisticsCards />
+      </div>
     </div>
   );
 }

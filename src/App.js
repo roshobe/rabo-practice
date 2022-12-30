@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <DashboardHeader />
-      <div className="flex">
+      <div className="flex h-full">
         <SideBar />
         <Feed />
       </div>
