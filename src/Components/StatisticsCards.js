@@ -37,21 +37,27 @@ function StatisticsCards() {
     },
     scales: {
       y: {
+        display: false,
         ticks: {
           display: false,
         },
         grid: {
           display: false,
+          drawBorder: false,
+          lineWidth: 0.5,
         },
       },
 
       x: {
+        display: false,
         ticks: {
           display: false,
           color: "rgba(0, 0, 0, 0)",
         },
         grid: {
           display: false,
+          drawBorder: false,
+          lineWidth: 0.5,
         },
       },
     },

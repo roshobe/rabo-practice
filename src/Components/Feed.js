@@ -41,6 +41,9 @@ function Feed() {
 
   return (
     <div className="bg-[#263159] p-2 w-screen space-y-2">
+      <div className="p-4">
+        <StatisticsCards />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 ">
         <DataCard />
         <DataCard />
@@ -50,9 +53,6 @@ function Feed() {
       </div>
       <div className="p-4">
         <MyChart info={data} />
-      </div>
-      <div className="p-4">
-        <StatisticsCards />
       </div>
     </div>
   );
