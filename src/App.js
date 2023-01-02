@@ -6,7 +6,7 @@ import { React, useState } from "react";
 function App() {
   const [open, setOpen] = useState(true);
   return (
-    <div>
+    <div className="w-max">
       <DashboardHeader open={open} setOpen={setOpen} />
       <div className="flex h-full">
         <SideBar open={open} />

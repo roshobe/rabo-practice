@@ -51,7 +51,8 @@ function Feed() {
         <DataCard />
         <DataCard />
       </div>
-      <div className="p-4">
+      <div className="p-4 space-y-2">
+        <MyChart info={data} />
         <MyChart info={data} />
       </div>
     </div>
